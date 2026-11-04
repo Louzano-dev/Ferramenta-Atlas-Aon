@@ -1,0 +1,26 @@
+/* Shared identity for both operating profiles. Loaded after entrance.css. */
+.atl-side .atl-brand{flex-direction:column;align-items:flex-start;gap:3px;padding:3px 8px 20px;min-height:82px}
+.atl-sidebar-brand.ac-brand{gap:8px;font-size:22px;letter-spacing:.2em;line-height:1;color:#14243f}
+.atl-sidebar-brand .ac-symbol{width:49px;height:46px;color:#14243f}
+.atl-side .atl-brand-t{padding-left:2px}
+.atl-side .atl-brand-t span{font-size:11px;margin-top:3px}
+.atl-header-brand.ac-brand{flex:none;gap:6px;font-size:16px;letter-spacing:.18em;line-height:1;color:#14243f}
+.atl-header-brand .ac-symbol{width:36px;height:35px;color:#14243f}
+.atl-top .atl-crumb{gap:14px}
+@media(min-width:901px){
+  .atl-side[data-collapsed=true] .atl-brand{align-items:center;justify-content:flex-start;padding-left:0;padding-right:0}
+  .atl-side[data-collapsed=true] .atl-sidebar-brand>span{display:none}
+  .atl-side[data-collapsed=true] .atl-sidebar-brand .ac-symbol{width:38px;height:46px}
+}
+@media(max-width:640px){
+  .atl-top{gap:8px;padding:0 12px}
+  .atl-top .atl-crumb{flex:1;gap:8px;overflow:hidden}
+  .atl-header-brand.ac-brand{font-size:14px;gap:4px;letter-spacing:.13em}
+  .atl-header-brand .ac-symbol{width:30px;height:32px}
+  .atl-top .atl-crumb>strong{overflow:hidden;text-overflow:ellipsis;font-size:12px}
+  .atl-top-r{gap:0;flex:none}
+  .atl-top-r .atl-emp{display:none}
+}
+@media(max-width:380px){
+  .atl-top .atl-crumb>span,.atl-top .atl-crumb>strong{display:none}
+}

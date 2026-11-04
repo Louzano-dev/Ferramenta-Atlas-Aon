@@ -1,0 +1,22 @@
+/* Same composition and Earth movement, with dedicated dark surfaces. */
+html[data-atlas-theme=dark] .atlas-cinema{background:radial-gradient(ellipse at 38% 48%,#223148 0,#142034 50%,#09121f 100%);color:#edf3fc}
+html[data-atlas-theme=dark] .ac-light{background:radial-gradient(ellipse at 16% 4%,#17283d70,transparent 38%),linear-gradient(90deg,#0b142210 10%,#14203440 38%,transparent 65%)}
+html[data-atlas-theme=dark] .ac-statue{opacity:.64;filter:brightness(.84) drop-shadow(12px 16px 24px #0007)}
+html[data-atlas-theme=dark] .ac-divider{background:#a7b9d4}
+html[data-atlas-theme=dark] .ac-header .ac-brand,html[data-atlas-theme=dark] .ac-identity{color:#edf3fc}
+html[data-atlas-theme=dark] .ac-header .ac-symbol>path:first-child,html[data-atlas-theme=dark] .ac-hero-symbol>path:first-child{fill:#edf3fc}
+html[data-atlas-theme=dark] .ac-access{border-color:#7187a4;box-shadow:0 18px 42px #0007}
+html[data-atlas-theme=dark] .ac-panel{background:linear-gradient(130deg,#1c2b42,#111e32);box-shadow:10px 0 26px #0004}
+html[data-atlas-theme=dark] .ac-panel h1{color:#edf3fc}
+html[data-atlas-theme=dark] .ac-profile{background:linear-gradient(120deg,#253750,#1a2a40);border-color:#6c809d;color:#edf3fc}
+html[data-atlas-theme=dark] .ac-profile:hover{background:#2d4260;border-color:#ff8295}
+html[data-atlas-theme=dark] .ac-profile:active{background:#354d6c}
+html[data-atlas-theme=dark] .ac-profile-icon{background:#324660;color:#edf3fc}
+html[data-atlas-theme=dark] .ac-profile-icon:has(.ac-aon){background:#f1f4fa}
+html[data-atlas-theme=dark] .ac-arrow{color:#ff8a9d}
+html[data-atlas-theme=dark] .ac-panel-foot,html[data-atlas-theme=dark] .ac-demo,html[data-atlas-theme=dark] .ac-form-help{color:#b9c8dd}
+html[data-atlas-theme=dark] .ac-form label{color:#edf3fc}
+html[data-atlas-theme=dark] .ac-back,html[data-atlas-theme=dark] .ac-legal{color:#d2dceb}
+html[data-atlas-theme=dark] .ac-error{color:#ff9eae}
+html[data-atlas-theme=dark] .atlas-cinema :focus-visible{outline-color:#a6d4ff}
+@media(max-width:1199px){html[data-atlas-theme=dark] .ac-statue{opacity:.17}}

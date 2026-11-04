@@ -1,0 +1,11 @@
+/* Decorative artwork remains independent of the access layout. */
+.ac-earth-photo{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.ac-earth-image{width:116%;height:100%;max-width:none;object-fit:cover;object-position:center;animation:ac-earth-pan 14s ease-in-out -3.5s infinite alternate}
+.ac-earth-photo.is-paused .ac-earth-image,.ac-earth-photo.is-offscreen .ac-earth-image{animation-play-state:paused}
+.ac-earth-orbit{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+@keyframes ac-earth-pan{from{transform:translateX(0)}to{transform:translateX(-13.5%)}}
+@media(max-width:639px){
+  .ac-earth-image{object-position:center 65%}
+  .ac-space:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#081628a6,transparent 65%);pointer-events:none}
+}
+@media(prefers-reduced-motion:reduce){.ac-earth-image{animation:none;transform:none}}

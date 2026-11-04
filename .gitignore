@@ -1,0 +1,12 @@
+node_modules/
+*.zip
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+tools/*.png
+tools/*-validation.json
+tools/validation.json
+tools/portable-build.json
+tools/pdf-validation/

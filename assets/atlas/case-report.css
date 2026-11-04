@@ -1,0 +1,14 @@
+.crp-download{display:flex;align-items:center;flex-wrap:wrap;gap:14px 22px;padding:18px 20px;background:var(--surface);border:1px solid var(--g4);border-radius:var(--r);min-width:0}
+.crp-copy{flex:1 1 350px;min-width:0}
+.crp-copy h2{font-size:16px;font-weight:600;margin:0 0 6px}
+.crp-copy p{font-size:13px;line-height:1.5;color:var(--g1);margin:0}
+.crp-copy .crp-help{font-size:12px;color:var(--g2);margin-top:6px}
+.crp-download>.atl-btn{min-height:44px;white-space:normal;flex:none}
+.crp-status,.crp-error{flex-basis:100%;font-size:13px;line-height:1.5;margin:0;overflow-wrap:anywhere}
+.crp-status{color:var(--g1)}
+.crp-status:empty{display:none}
+.crp-error{color:var(--atlas-error,#b42318)}
+.crp-issues{flex-basis:100%;font-size:12px;line-height:1.5;color:var(--g1)}
+.crp-issues summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px;min-height:32px;display:flex;align-items:center}
+.crp-issues ul{list-style:disc;padding-left:20px;margin-top:8px;overflow-wrap:anywhere}
+@media(max-width:639px){.crp-download{padding:16px}.crp-download>.atl-btn{width:100%}.crp-issues summary{min-height:44px}}

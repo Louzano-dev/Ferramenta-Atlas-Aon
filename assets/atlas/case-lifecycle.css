@@ -1,0 +1,16 @@
+/* Confirmation is scoped to the Aon case lifecycle. */
+.cl-overlay{position:fixed;inset:0;z-index:120;display:grid;place-items:center;padding:20px;background:#10213a80}
+.cl-dialog{width:100%;max-width:560px;max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px);overflow-y:auto;overscroll-behavior:contain;padding:25px;background:#fff;border:1px solid var(--g5);border-radius:10px;box-shadow:0 12px 32px #10213a33;color:var(--navy)}
+.cl-dialog h2{margin:0 0 10px;font-size:23px;font-weight:600;line-height:1.2}
+.cl-case{font-size:14px;margin-bottom:12px;overflow-wrap:anywhere}
+.cl-description{font-size:13px;line-height:1.5;color:var(--g2);margin-bottom:20px}
+.cl-form{display:grid;gap:15px}
+.cl-form label{display:grid;gap:7px;font-size:13px;font-weight:600}
+.cl-form textarea{font-size:16px;min-height:105px;resize:vertical}
+.cl-pending{display:grid;gap:8px;border-left:3px solid var(--or-l);padding:10px 12px;background:var(--g8);font-size:12px;line-height:1.45}
+.cl-pending [role=checkbox]{min-height:44px}
+.cl-actions{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:10px}
+.cl-actions button{min-height:44px;white-space:normal}
+.cl-error{font-size:13px;line-height:1.45;color:var(--red)}
+.cl-complete{display:grid;justify-items:start;gap:12px;border-top:1px solid var(--g6);padding-top:16px}
+@media(max-width:480px){.cl-overlay{padding:12px}.cl-dialog{padding:20px;max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px)}.cl-actions{display:grid;grid-template-columns:1fr;width:100%}.cl-actions button{width:100%}.cl-dialog h2{font-size:21px}}

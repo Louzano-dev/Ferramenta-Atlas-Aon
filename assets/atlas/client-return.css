@@ -1,0 +1,16 @@
+.cr-estimate{color:#10213a;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+.cr-estimate-compact{margin-top:12px;padding-top:10px;border-top:1px solid #e3e8ec}
+.cr-label{color:#596570}
+.cr-value{font-weight:600}
+.cr-note{margin:4px 0 0;font-size:13px;line-height:1.5;color:#596570}
+.cr-estimate.is-overdue .cr-value,.cr-estimate.is-overdue>.cr-note:first-of-type{color:#925414}
+.cr-form{display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px}
+.cr-form>label{flex:1 1 230px;min-width:0;max-width:330px}
+.cr-form input[type=date]{width:100%;max-width:100%;min-height:44px;font-size:16px;box-sizing:border-box}
+.cr-form-actions{display:flex;flex-wrap:wrap;gap:8px}
+.cr-form button{min-height:44px;white-space:normal}
+.cr-error{color:#b42318;font-size:14px;line-height:1.5;margin:0}
+.cr-message{color:#16734c;font-size:14px;line-height:1.5;margin:0}
+.cr-message:empty{display:none}
+.cr-case-card .atl-badge{max-width:100%;white-space:normal;text-align:left}
+@media(max-width:639px){.cr-form{display:block}.cr-form>label{display:block;max-width:none}.cr-form-actions{margin-top:12px;flex-direction:column}.cr-form-actions>button{width:100%}.cr-estimate{font-size:14px}}

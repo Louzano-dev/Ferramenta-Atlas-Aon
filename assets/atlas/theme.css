@@ -1,0 +1,22 @@
+/* Appearance controls keep a visible focus ring and a 44px touch target. */
+:root{--atlas-error:#b42318;--at-toggle-bg:#fff;--at-toggle-text:#10213a;--at-toggle-border:#82939a}
+html[data-atlas-theme=light] .input{border-color:#7b8d9a}
+html[data-atlas-theme=light] .input::placeholder{color:#5d6d78!important;opacity:1}
+html[data-atlas-theme=light] .atl-btn:disabled{opacity:1;background:#eef2f6;color:#596570;border-color:#a6b4c1}
+html[data-atlas-theme=light] .cr-value{color:#10213a}
+.at-theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex:none;min-height:44px;padding:9px 12px;border:1px solid var(--at-toggle-border);border-radius:8px;background:var(--at-toggle-bg);color:var(--at-toggle-text);font:500 13px/1.25 var(--font);white-space:nowrap;cursor:pointer}
+.at-theme-toggle>svg{flex:none}
+.at-theme-toggle:hover{border-color:var(--red);background:var(--g7)}
+.at-theme-toggle:focus-visible{outline:3px solid #1769aa;outline-offset:3px}
+.at-theme-entrance{margin-left:auto}
+.atl-top-r>.at-theme-toggle{margin-left:4px}
+@media(max-width:900px){.at-theme-toggle .at-theme-label{display:none}.at-theme-toggle{width:44px;padding:10px}.atl-top-r{flex:none;gap:8px}}
+@media(max-width:640px){.atl-top-r>.atl-badge{display:none}.atl-top .atl-crumb{flex:1;min-width:0}.atl-top-r>.at-theme-toggle{margin-left:0}}
+@media(max-width:639px){
+  .ac-header{gap:12px;padding-left:14px;padding-right:14px}
+  .ac-header .ac-aon{width:64px;height:38px}
+  .ac-header .ac-brand{font-size:20px;gap:6px}
+  .ac-header .ac-symbol{width:44px;height:42px}
+  .ac-header .ac-divider{height:32px}
+}
+@media print{.at-theme-toggle{display:none!important}}

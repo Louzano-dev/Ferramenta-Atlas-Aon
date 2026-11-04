@@ -1,0 +1,13 @@
+.cf-filter{min-width:0;padding:16px;border:1px solid #d7e1e6;border-radius:8px;background:#fff;margin-bottom:20px}
+.cf-filter-controls{display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px;min-width:0}
+.cf-filter-field{display:flex;flex-direction:column;gap:6px;flex:1 1 260px;min-width:0;max-width:520px;color:#10213a;font-size:13px;font-weight:600}
+.cf-filter-field .input{width:100%;max-width:100%;min-width:0;min-height:44px;font-size:16px;font-weight:400;box-sizing:border-box;text-overflow:ellipsis}
+.cf-filter-controls>button{min-height:44px;white-space:normal}
+.cf-filter-status{margin:10px 0 0;color:#596570;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+.cf-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cf-stats>.cf-stat{min-width:0;width:100%;overflow-wrap:anywhere}
+.cf-stats>.cf-stat>.cf-stat-value{font-size:clamp(18px,2.2vw,24px);line-height:1.25;white-space:normal;overflow-wrap:anywhere}
+.cf-stat[data-stat=exposicao]>.cf-stat-value{font-size:clamp(16px,1.8vw,24px);font-variant-numeric:tabular-nums}
+@media(min-width:1024px){.cf-stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1023px){.cf-stats>.cf-stat[data-stat=exposicao]{grid-column:1/-1}.cf-stats>.cf-stat[data-stat=exposicao]>.cf-stat-value{font-size:clamp(20px,2.6vw,24px)}}
+@media(max-width:639px){.cf-filter{padding:14px}.cf-filter-controls{display:block}.cf-filter-field{max-width:none}.cf-filter-controls>button{width:100%;margin-top:12px}.cf-stats>.cf-stat{padding:14px}}
