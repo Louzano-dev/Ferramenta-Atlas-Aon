@@ -1,0 +1,16 @@
+/* Keep the approved statue/Earth composition; refine access controls and reading. */
+html[data-atlas-experiment] .atlas-cinema{font-family:var(--ui-font)}
+html[data-atlas-experiment] .ac-panel{border-radius:22px}
+html[data-atlas-experiment] .ac-orbit-marker{position:absolute;width:5px;height:5px;box-sizing:border-box;border:1px solid #ff7082;border-radius:50%;background:#fff;box-shadow:0 0 4px 1px #f31436,0 0 10px 2px #eb00174d;transform:translate(-50%,-50%);pointer-events:none;z-index:2}
+html[data-atlas-experiment] .ac-panel button{font-family:var(--ui-font);touch-action:manipulation}
+html[data-atlas-experiment] .atlas-cinema .ac-legal button{min-height:44px;min-width:44px;padding:8px 4px;font-size:11px}
+html[data-atlas-experiment] .ac-profile{transition:border-color .16s var(--ui-ease),background .16s var(--ui-ease),box-shadow .16s var(--ui-ease)}
+html[data-atlas-experiment] .ac-profile:focus-visible{outline:3px solid var(--ui-focus);outline-offset:4px}
+html[data-atlas-experiment] .atlas-cinema :is(input,select){font-family:var(--ui-font);font-size:16px;min-height:46px;border-radius:8px}
+html[data-atlas-experiment] .atlas-cinema :is(button,input,select):focus-visible{outline:3px solid var(--ui-focus);outline-offset:3px}
+html[data-atlas-experiment] .atlas-cinema .input::placeholder{color:#53677d!important;opacity:1}
+html[data-atlas-experiment][data-atlas-theme=dark] .atlas-cinema .input::placeholder{color:#b5c5da!important}
+html[data-atlas-experiment] .atlas-cinema .atl-btn{min-height:46px;border-radius:8px;font-weight:600}
+html[data-atlas-experiment] .atlas-cinema .atl-btn-primary{background:#c90022;border-color:#c90022;color:#fff}
+html[data-atlas-experiment] .atlas-cinema .atl-btn-primary:hover{background:#a8001b;border-color:#a8001b}
+@media(prefers-reduced-motion:reduce){html[data-atlas-experiment] .ac-profile{transition:none}}

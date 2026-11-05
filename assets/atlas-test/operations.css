@@ -1,0 +1,171 @@
+/* Operational views share one rhythm. Visual changes never alter case data. */
+html[data-atlas-experiment] .atl-shell [data-ui-view]{min-width:0}
+html[data-atlas-experiment] .atl-shell [data-ui-section]{min-width:0;padding:24px;background:var(--ui-surface);border-color:var(--ui-line);border-radius:14px}
+html[data-atlas-experiment] .atl-shell .ui-section-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--ui-line)}
+html[data-atlas-experiment] .atl-shell .ui-section-heading>:is(h2,div:first-child){margin:0;font-size:16px;line-height:1.45;font-weight:650;color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell .ui-section-body{min-width:0;display:grid;gap:16px;padding-top:20px}
+html[data-atlas-experiment] .atl-shell .ui-section-body>p:first-child{margin-top:0}
+html[data-atlas-experiment] .atl-shell :is([data-ui-view=ClientDetail],[data-ui-view=AonDetail])>h1{max-width:44ch}
+html[data-atlas-experiment] .atl-shell :is([data-ui-view=ClientDetail],[data-ui-view=AonDetail])>.flex:has(h1){gap:12px;padding-bottom:4px}
+
+/* Filters form a working toolbar; the results remain a separate reading surface. */
+html[data-atlas-experiment] .atl-shell :is([data-ui-view=AonList],[data-ui-view=AonCompleted],[data-ui-view=AonHistorico])>div:has(>input[aria-label="Buscar"]){padding:16px;background:var(--ui-surface);border:1px solid var(--ui-line);border-radius:12px;gap:12px;align-items:center}
+html[data-atlas-experiment] .atl-shell :is(.cth-filters,.cth-history-filters){gap:14px;padding:18px;background:var(--ui-surface);border:1px solid var(--ui-line);border-radius:12px}
+html[data-atlas-experiment] .atl-shell .cth-field{gap:7px;color:var(--ui-ink);font-size:12px;font-weight:600;line-height:1.5}
+html[data-atlas-experiment] .atl-shell .cth-field .input{min-height:44px;border-color:var(--ui-control);font-size:16px}
+html[data-atlas-experiment] .atl-shell :is(.cth-note,[data-ui-view]>div[role=status]){font-size:12px;line-height:1.6;color:var(--ui-muted)}
+html[data-atlas-experiment] .atl-shell .cth-pager{padding:4px 0;gap:12px;color:var(--ui-muted)}
+html[data-atlas-experiment] .atl-shell .cth-pager-controls{gap:8px}
+html[data-atlas-experiment] .atl-shell .cth-pager :is(button,.input){min-height:44px;font-size:13px;border-radius:8px}
+
+/* Tables preserve their columns and scroll inside their own frame. */
+html[data-atlas-experiment] .atl-shell :is(.overflow-x-auto,.cth-table-scroll){min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;border-color:var(--ui-line);border-radius:12px;background:var(--ui-surface)}
+html[data-atlas-experiment] .atl-shell table{font-variant-numeric:tabular-nums;border-spacing:0;color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell table :is(th,td){text-align:left}
+html[data-atlas-experiment] .atl-shell table th{padding:13px 16px!important;color:var(--ui-muted);background:var(--ui-subtle);border-bottom:1px solid var(--ui-line);font-size:12px;line-height:1.45;font-weight:650;letter-spacing:0}
+html[data-atlas-experiment] .atl-shell table td{padding:13px 16px!important;vertical-align:middle;color:var(--ui-ink);border-bottom:1px solid var(--ui-line);font-size:13px;line-height:1.55}
+html[data-atlas-experiment] .atl-shell table tbody tr{background:var(--ui-surface)}
+html[data-atlas-experiment] .atl-shell table tbody tr:hover{background:var(--ui-subtle)}
+html[data-atlas-experiment] .atl-shell table tbody tr:last-child td{border-bottom:0}
+html[data-atlas-experiment] .atl-shell table td:first-child>button{min-height:44px;display:inline-flex;align-items:center;font-weight:650;white-space:nowrap}
+html[data-atlas-experiment] .atl-shell .cth-table :is(.atl-btn,.atl-link){min-height:44px;display:inline-flex;align-items:center;font-size:12px;line-height:1.45}
+html[data-atlas-experiment] .atl-shell .cth-table :is(td small,.cth-summary){color:var(--ui-muted);font-size:12px;line-height:1.6}
+html[data-atlas-experiment] .atl-shell .cth-table .cth-internal{border-color:var(--ui-line);border-radius:4px;padding:2px 6px;font-size:11px;color:var(--ui-muted);background:var(--ui-subtle)}
+html[data-atlas-experiment] .atl-shell .cth-empty{padding:32px 20px!important;color:var(--ui-muted)!important;font-size:14px}
+html[data-atlas-experiment] .atl-shell [data-ui-view=AonApolices] table{min-width:880px}
+html[data-atlas-experiment] .atl-shell [data-ui-view=AonApolices] table td:nth-child(6){min-width:220px;max-width:330px}
+html[data-atlas-experiment] .atl-shell .cth-summary{max-width:340px}
+
+/* Form controls keep labels above the field and room for the next decision. */
+html[data-atlas-experiment] .atl-shell label.block{min-width:0}
+html[data-atlas-experiment] .atl-shell label.block>div:first-child{margin-bottom:8px;font-size:13px;line-height:1.5;font-weight:600;color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell label.block>.input{width:100%;max-width:100%;min-width:0}
+html[data-atlas-experiment] .atl-shell textarea.input{padding:12px 14px;min-height:104px;line-height:1.65;resize:vertical}
+html[data-atlas-experiment] .atl-shell [role=checkbox]{min-height:44px;line-height:1.5;gap:10px;color:var(--ui-ink);border-radius:6px;touch-action:manipulation}
+html[data-atlas-experiment] .atl-shell [role=checkbox]>svg{flex:none;color:var(--ui-control)}
+html[data-atlas-experiment] .atl-shell [role=checkbox][aria-checked=true]>svg{color:var(--ui-focus)}
+html[data-atlas-experiment] .atl-shell [role=checkbox]:hover{background:var(--ui-subtle)}
+html[data-atlas-experiment] .atl-shell [data-ui-view=ComunicacaoForm]{max-width:860px}
+html[data-atlas-experiment] .atl-shell [data-ui-view=ComunicacaoForm]>.atl-card{padding:24px}
+html[data-atlas-experiment] .atl-shell [data-ui-view=ComunicacaoForm] .grid{column-gap:24px;row-gap:20px}
+html[data-atlas-experiment] .atl-shell [aria-label="Etapas do formulário"]{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:24px 0;padding:0;list-style:none}
+html[data-atlas-experiment] .atl-shell [aria-label="Etapas do formulário"]>li{display:flex;align-items:center;min-width:0;min-height:52px;padding:10px 12px;border:1px solid var(--ui-line);border-radius:8px;background:var(--ui-surface);color:var(--ui-muted);font-size:12px;line-height:1.5;font-weight:500}
+html[data-atlas-experiment] .atl-shell [aria-label="Etapas do formulário"]>li.bg-blue-700{background:var(--ui-ink);color:var(--ui-surface);border-color:var(--ui-ink);font-weight:650}
+html[data-atlas-experiment][data-atlas-theme=dark] .atl-shell [aria-label="Etapas do formulário"]>li.bg-blue-700{background:#c8dcf3;color:#11243c;border-color:#c8dcf3}
+html[data-atlas-experiment] .atl-shell [aria-label="Etapas do formulário"]>li.bg-blue-50{background:var(--ui-subtle);border-color:var(--ui-control);color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell [data-ui-view=ComunicacaoForm] .flex:has(>.w-44){display:grid;grid-template-columns:170px minmax(0,1fr);gap:16px;padding:8px 0;border-bottom:1px solid var(--ui-line)}
+html[data-atlas-experiment] .atl-shell [data-ui-view=ComunicacaoForm] .flex:has(>.w-44)>span{min-width:0;max-width:100%;width:auto;overflow-wrap:anywhere}
+html[data-atlas-experiment] .atl-shell :is([data-ui-view=AonApolices],[data-ui-view=AnaliseTab],[data-ui-view=PlanoTab],[data-ui-view=DocsTab],[data-ui-view=SeguradoraTab]) .grid:has(label.block){column-gap:20px;row-gap:18px}
+
+/* Case navigation is a predictable tab strip, not another set of cards. */
+html[data-atlas-experiment] .atl-shell [role=tablist]{display:flex;gap:4px;max-width:100%;min-width:0;padding:0 0 2px;border-bottom:1px solid var(--ui-line);overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
+html[data-atlas-experiment] .atl-shell [role=tablist]>button{position:relative;flex:none;min-height:48px;padding:12px 16px;border:0;border-bottom:2px solid transparent;border-radius:6px 6px 0 0;background:transparent;color:var(--ui-muted);font-size:13px;line-height:1.5;font-weight:500;white-space:nowrap}
+html[data-atlas-experiment] .atl-shell [role=tablist]>button:hover{background:var(--ui-subtle);color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell [role=tablist]>button[aria-selected=true]{border-bottom-color:var(--ui-accent);background:var(--ui-subtle);color:var(--ui-ink);font-weight:650}
+html[data-atlas-experiment] .atl-shell [data-guia]{padding:18px 20px;border-color:var(--ui-line);background:var(--ui-surface);border-radius:12px}
+html[data-atlas-experiment] .atl-shell [data-guia] [aria-label="Etapas do caso"]{gap:8px}
+html[data-atlas-experiment] .atl-shell [data-guia] [data-etapa]{min-height:44px;padding:10px 12px;border-radius:6px;line-height:1.5;font-size:12px}
+html[data-atlas-experiment] .atl-shell [data-guia] [data-etapa=atual]{background:var(--ui-ink);color:var(--ui-surface);border-color:var(--ui-ink)}
+html[data-atlas-experiment][data-atlas-theme=dark] .atl-shell [data-guia] [data-etapa=atual]{background:#c8dcf3;color:#11243c;border-color:#c8dcf3}
+html[data-atlas-experiment] .atl-shell [data-proxima]{padding-top:10px;margin-top:12px;border-top:1px solid var(--ui-line);font-size:13px;line-height:1.6}
+html[data-atlas-experiment] .atl-shell .ui-case-notice{display:flex;align-items:flex-start;gap:12px;min-width:0;padding:16px 18px;border:1px solid var(--ui-line);border-radius:10px;background:var(--ui-warning-bg);color:var(--ui-warning)}
+html[data-atlas-experiment] .atl-shell .ui-case-notice>svg{flex:none;margin-top:1px}
+html[data-atlas-experiment] .atl-shell .ui-case-notice>div{min-width:0}
+html[data-atlas-experiment] .atl-shell .ui-case-notice strong{display:block;font-size:13px;line-height:1.5;font-weight:650;color:inherit}
+html[data-atlas-experiment] .atl-shell .ui-case-notice ul{display:grid;gap:6px;margin:4px 0 0;padding:0;list-style:none;font-size:13px;line-height:1.6;color:inherit;overflow-wrap:anywhere}
+html[data-atlas-experiment] .atl-shell .ui-case-notice ul:has(li+li){padding-left:18px;list-style:disc}
+
+/* Timeline states stay visible through position, text and shape as well as color. */
+html[data-atlas-experiment] .atl-shell .atl-tl-item{gap:16px;padding-bottom:22px}
+html[data-atlas-experiment] .atl-shell .atl-tl-dot{width:28px;height:28px;flex-basis:28px;background:var(--ui-surface);border-color:var(--ui-control);color:var(--ui-muted)}
+html[data-atlas-experiment] .atl-shell .atl-tl-item::before{left:13px;top:31px;bottom:-1px;background:var(--ui-line)}
+html[data-atlas-experiment] .atl-shell .atl-tl-item[data-estado=feito]::before{background:var(--ui-control)}
+html[data-atlas-experiment] .atl-shell .atl-tl-item[data-estado=feito] .atl-tl-dot{background:var(--ui-ink);border-color:var(--ui-ink);color:var(--ui-surface)}
+html[data-atlas-experiment][data-atlas-theme=dark] .atl-shell .atl-tl-item[data-estado=feito] .atl-tl-dot{background:#c8dcf3;border-color:#c8dcf3;color:#11243c}
+html[data-atlas-experiment] .atl-shell .atl-tl-item[data-estado=atual] .atl-tl-dot{border-color:var(--ui-accent);color:var(--ui-accent);box-shadow:none}
+html[data-atlas-experiment] .atl-shell .atl-tl-title{color:var(--ui-ink);font-size:14px;line-height:1.5;font-weight:600}
+html[data-atlas-experiment] .atl-shell .atl-tl-item[data-estado=pendente] .atl-tl-title{color:var(--ui-muted);font-weight:400}
+html[data-atlas-experiment] .atl-shell .atl-tl-body>.text-xs{font-size:12px;line-height:1.6;color:var(--ui-muted);margin-top:3px}
+html[data-atlas-experiment] .atl-shell [aria-label="Histórico do sinistro"]>li{padding:14px 0;gap:18px;border-color:var(--ui-line);line-height:1.6}
+html[data-atlas-experiment] .atl-shell [aria-label="Histórico do sinistro"]>li>span:last-child{min-width:0;overflow-wrap:anywhere}
+
+/* Documents, actions and monitoring use reading rows rather than nested cards. */
+html[data-atlas-experiment] .atl-shell [data-doc]{padding:18px 0;border-color:var(--ui-line)}
+html[data-atlas-experiment] .atl-shell [data-doc]>div:first-child{align-items:center;gap:12px}
+html[data-atlas-experiment] .atl-shell [data-doc]>div:first-child>span:first-child{font-size:14px;font-weight:600;color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell [data-doc] :is(.atl-link,button.text-red-700){min-height:44px;display:inline-flex;align-items:center;line-height:1.5}
+html[data-atlas-experiment] .atl-shell [data-doc]>div.flex:has(input[aria-label="Motivo da substituição"]){flex-wrap:wrap;align-items:center;gap:10px;padding-top:8px}
+html[data-atlas-experiment] .atl-shell [data-doc] input[aria-label="Motivo da substituição"]{flex:1 1 240px;min-width:0}
+html[data-atlas-experiment] .atl-shell .atl-drop{padding:18px;border:1px dashed var(--ui-control);border-radius:10px;background:var(--ui-subtle);color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell .atl-drop:hover{border-color:var(--ui-focus);background:var(--ui-subtle)}
+html[data-atlas-experiment] .atl-shell input[type=file]{width:100%;min-width:0;max-width:100%;box-sizing:border-box;color:var(--ui-muted);font-size:16px;line-height:1.5}
+html[data-atlas-experiment] .atl-shell .atl-drop input[type=file]{width:100%;min-width:0;max-width:100%;font-size:16px}
+html[data-atlas-experiment] .atl-shell [data-ui-view=DocsTab] :is(.flex-1,.atl-drop){min-width:0;max-width:100%}
+html[data-atlas-experiment] .atl-shell .cth-pager select.input{font-size:16px}
+html[data-atlas-experiment] .atl-shell .atl-drop input[type=file]::file-selector-button{min-height:44px;border-color:var(--ui-control);border-radius:8px;background:var(--ui-surface);color:var(--ui-ink);font-size:13px}
+html[data-atlas-experiment] .atl-shell [data-tarefa]{align-items:center;gap:14px;padding:14px 0;border-color:var(--ui-line)}
+html[data-atlas-experiment] .atl-shell [data-tarefa]>[role=checkbox]{display:flex;align-items:center;justify-content:center;min-width:44px;flex:none;margin:0}
+html[data-atlas-experiment] .atl-shell [data-tarefa]>button:last-child{min-height:44px;flex:none}
+html[data-atlas-experiment] .atl-shell [data-ui-view=AonMonitor] [data-ui-section] ul>li{padding:14px 0;align-items:flex-start;border-color:var(--ui-line);gap:14px}
+html[data-atlas-experiment] .atl-shell [data-ui-view=AonMonitor] ul>li>button{min-height:44px;min-width:0}
+html[data-atlas-experiment] .atl-shell [data-ui-view=AonMonitor] ul>li>button>div:first-child{font-weight:500;line-height:1.6}
+html[data-atlas-experiment] .atl-shell [data-ui-view=AonMonitor] ul>li>button>.text-xs{margin-top:4px;font-size:12px;line-height:1.6}
+html[data-atlas-experiment] .atl-shell [data-ui-view=AonConfig] [data-ui-section]{max-width:860px}
+html[data-atlas-experiment] .atl-shell [data-ui-view=AonConfig] [data-ui-section] ul{display:grid;gap:10px;line-height:1.7}
+
+/* Reports and confirmations belong to the same surface and color vocabulary. */
+html[data-atlas-experiment] .atl-shell .crp-download{padding:18px 20px;border-color:var(--ui-line);border-radius:12px;background:var(--ui-surface);gap:12px 20px}
+html[data-atlas-experiment] .atl-shell .crp-copy h2{font-size:15px;line-height:1.5;font-weight:650;color:var(--ui-ink);margin:0 0 4px}
+html[data-atlas-experiment] .atl-shell .crp-copy p{font-size:13px;line-height:1.6;color:var(--ui-muted)}
+html[data-atlas-experiment] .atl-shell .crp-copy .crp-help{font-size:12px;color:var(--ui-muted)}
+html[data-atlas-experiment] .atl-shell .crp-status{color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell :is(.crp-error,.cth-error,.cl-error){color:var(--ui-danger)}
+html[data-atlas-experiment] .atl-shell :is(.cl-overlay,.cth-modal-backdrop){background:#0711219e;backdrop-filter:none;padding:24px}
+html[data-atlas-experiment] .atl-shell :is(.cl-dialog,.cth-modal){padding:28px;border:0;border-radius:16px;background:var(--ui-surface);color:var(--ui-ink);box-shadow:0 24px 70px #050c1d40}
+html[data-atlas-experiment] .atl-shell :is(.cl-dialog,.cth-modal) h2{font-size:22px;line-height:1.35;color:var(--ui-ink)}
+html[data-atlas-experiment] .atl-shell :is(.cl-description,.cth-note){color:var(--ui-muted);line-height:1.65}
+html[data-atlas-experiment] .atl-shell .cl-pending{padding:14px 16px;border:1px solid var(--ui-warning);border-radius:8px;background:var(--ui-subtle);line-height:1.6}
+html[data-atlas-experiment] .atl-shell :is(.cth-meta,.cth-recorded-data){padding:16px;border-color:var(--ui-line);border-radius:10px;background:var(--ui-subtle)}
+html[data-atlas-experiment] .atl-shell :is(.cth-meta dt,.cth-recorded-details dt){color:var(--ui-muted);font-size:12px;line-height:1.5}
+html[data-atlas-experiment] .atl-shell :is(.cth-meta dd,.cth-recorded-details dd,.cth-event-text,.cth-recorded-data){color:var(--ui-ink);line-height:1.65;overflow-wrap:anywhere}
+html[data-atlas-experiment] .atl-shell .cth-recorded-details .cth-recorded-details{padding-left:14px;border-left-width:1px;border-left-color:var(--ui-control)}
+html[data-atlas-experiment] .atl-shell .cth-modal-actions{padding-top:18px;border-color:var(--ui-line);gap:10px}
+
+@media(max-width:1150px){
+  html[data-atlas-experiment] .atl-shell .cth-filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+  html[data-atlas-experiment] .atl-shell [data-ui-view=ComunicacaoForm] .grid{column-gap:18px;row-gap:18px}
+}
+@media(max-width:767px){
+  html[data-atlas-experiment] .atl-shell [data-ui-view=AonList]>.md\:hidden>button{padding:18px;border-radius:12px}
+  html[data-atlas-experiment] .atl-shell [data-ui-view=AonList]>.md\:hidden>button>div:first-child{align-items:flex-start;flex-wrap:wrap;gap:10px}
+  html[data-atlas-experiment] .atl-shell [data-ui-view=AonList]>.md\:hidden>button>div:nth-child(2){font-weight:600;margin-top:10px}
+}
+@media(max-width:639px){
+  html[data-atlas-experiment] .atl-shell [data-ui-section],
+  html[data-atlas-experiment] .atl-shell [data-ui-view=ComunicacaoForm]>.atl-card{padding:18px}
+  html[data-atlas-experiment] .atl-shell .ui-section-heading{padding-bottom:12px;gap:10px}
+  html[data-atlas-experiment] .atl-shell .ui-section-heading>div:first-child{font-size:15px}
+  html[data-atlas-experiment] .atl-shell .ui-section-body{gap:16px}
+  html[data-atlas-experiment] .atl-shell .cth-filters{grid-template-columns:minmax(0,1fr);padding:16px;gap:14px}
+  html[data-atlas-experiment] .atl-shell [aria-label="Etapas do formulário"]{grid-template-columns:repeat(2,minmax(0,1fr));margin:20px 0;gap:8px}
+  html[data-atlas-experiment] .atl-shell [aria-label="Etapas do formulário"]>li{min-height:52px;font-size:12px;line-height:1.5;padding:10px}
+  html[data-atlas-experiment] .atl-shell [data-ui-view=ComunicacaoForm] .flex:has(>.w-44){grid-template-columns:minmax(0,1fr);gap:4px}
+  html[data-atlas-experiment] .atl-shell .atl-tl-item{gap:12px;padding-bottom:20px}
+  html[data-atlas-experiment] .atl-shell .atl-tl-title{font-size:14px}
+  html[data-atlas-experiment] .atl-shell [aria-label="Histórico do sinistro"]>li{flex-direction:column;gap:5px}
+  html[data-atlas-experiment] .atl-shell [data-doc]{padding:16px 0}
+  html[data-atlas-experiment] .atl-shell [data-doc]>div.flex:has(input[aria-label="Motivo da substituição"])>button{width:100%}
+  html[data-atlas-experiment] .atl-shell .atl-drop{padding:14px}
+  html[data-atlas-experiment] .atl-shell [data-tarefa]{gap:8px;flex-wrap:wrap}
+  html[data-atlas-experiment] .atl-shell [data-tarefa]>div.flex-1{flex-basis:calc(100% - 52px)}
+  html[data-atlas-experiment] .atl-shell [data-tarefa]>button:last-child{margin-left:52px}
+  html[data-atlas-experiment] .atl-shell [data-ui-view=AonMonitor] [data-ui-section] ul>li{flex-wrap:wrap;gap:8px}
+  html[data-atlas-experiment] .atl-shell .crp-download{padding:16px}
+  html[data-atlas-experiment] .atl-shell :is(.cl-overlay,.cth-modal-backdrop){padding:12px}
+  html[data-atlas-experiment] .atl-shell :is(.cl-dialog,.cth-modal){padding:20px;border-radius:14px;max-height:calc(100svh - 24px)}
+  html[data-atlas-experiment] .atl-shell :is(.cl-dialog,.cth-modal) h2{font-size:20px}
+  html[data-atlas-experiment] .atl-shell .cth-meta{grid-template-columns:minmax(0,1fr)}
+}
+@media(prefers-reduced-motion:reduce){
+  html[data-atlas-experiment] .atl-shell [data-ui-view] *{scroll-behavior:auto;transition:none!important;animation:none!important}
+}

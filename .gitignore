@@ -10,3 +10,5 @@ tools/*-validation.json
 tools/validation.json
 tools/portable-build.json
 tools/pdf-validation/
+tools/atlas-test-review/
+tools/atlas-design-review/

@@ -1,0 +1,85 @@
+/* Conversations hub: an operating surface inside the experimental Atlas world. */
+html[data-atlas-experiment] .ach-page{min-width:0;color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-page-header{margin-bottom:24px}
+html[data-atlas-experiment] .ach-page-header h1{margin:0;font-size:24px;line-height:1.3;font-weight:700;letter-spacing:-.025em;color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-page-header p{margin:8px 0 0;max-width:70ch;font-size:14px;line-height:1.6;color:var(--atc-muted)}
+html[data-atlas-experiment] .ach-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:20px;align-items:start;min-width:0}
+html[data-atlas-experiment] .ach-sidebar{position:sticky;top:88px;min-width:0;overflow:hidden;border:1px solid var(--atc-line);border-radius:12px;background:var(--atc-surface)}
+html[data-atlas-experiment] .ach-list-title{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 16px 12px;color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-list-title h2{margin:0;font-size:15px;font-weight:700;line-height:1.4;color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-list-title>span{display:flex;align-items:center;justify-content:center;min-width:25px;min-height:25px;padding:2px 7px;border-radius:6px;background:var(--atc-highlight);font-size:12px;font-weight:600;line-height:1.4;font-variant-numeric:tabular-nums}
+html[data-atlas-experiment] .ach-list-search{display:block;padding:0 16px 12px;font-size:12px;line-height:1.5;font-weight:600;color:var(--atc-muted)}
+html[data-atlas-experiment] .ach-list-caption{margin:0;padding:0 16px 12px;font-size:11px;line-height:1.5;color:var(--atc-muted)}
+html[data-atlas-experiment] .ach-list-search input{display:block;width:100%;min-width:0;min-height:44px;box-sizing:border-box;margin-top:7px;padding:10px 11px;border:1px solid var(--atc-control);border-radius:8px;background:var(--atc-surface);color:var(--atc-ink);font:inherit;font-size:16px;font-weight:400;line-height:1.4;caret-color:var(--atc-focus)}
+html[data-atlas-experiment] .ach-list-search input::placeholder{color:var(--atc-muted)!important;opacity:1}
+html[data-atlas-experiment] .ach-list-caption{margin:0;padding:0 16px 12px;color:var(--atc-muted);font-size:12px;line-height:1.5}
+html[data-atlas-experiment] .ach-list{list-style:none;padding:0 8px 8px;margin:0;max-height:calc(100svh - 270px);min-height:80px;overflow:auto;overscroll-behavior:contain;scrollbar-color:var(--atc-control) transparent;scroll-padding:8px}
+html[data-atlas-experiment] .ach-list>li{list-style:none;margin:0;padding:0}
+html[data-atlas-experiment] .ach-list>li+li{margin-top:5px}
+html[data-atlas-experiment] .ach-item{display:flex;flex-direction:column;align-items:stretch;gap:5px;width:100%;min-height:44px;min-width:0;padding:13px 12px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--atc-ink);text-align:left;cursor:pointer;touch-action:manipulation;font:inherit;transition:background-color .15s ease,border-color .15s ease;overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-item:hover{background:var(--atc-canvas)}
+html[data-atlas-experiment] .ach-item[aria-current=true]{background:var(--atc-highlight);border-color:var(--atc-control)}
+html[data-atlas-experiment] .ach-item-company{font-size:13px;font-weight:650;line-height:1.45;color:var(--atc-ink);overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-item-id{font-size:12px;font-weight:600;line-height:1.45;color:var(--atc-muted);font-variant-numeric:tabular-nums}
+html[data-atlas-experiment] .ach-item-type{font-size:12px;font-weight:400;line-height:1.4;color:var(--atc-muted)}
+html[data-atlas-experiment] .ach-item-preview{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:3px;font-size:12px;line-height:1.6;color:var(--atc-ink);overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-item-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:3px 8px;margin-top:5px;font-size:11px;line-height:1.5;color:var(--atc-muted)}
+html[data-atlas-experiment] .ach-item-foot small{font-size:11px;line-height:1.5;color:var(--atc-muted);overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-main{display:flex;flex-direction:column;gap:16px;min-width:0}
+html[data-atlas-experiment] .ach-case-picker{display:flex;flex-direction:column;gap:7px;min-width:0;font-size:13px;line-height:1.5;font-weight:600;color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-case-picker label{display:block;color:var(--atc-ink);font-size:13px;line-height:1.5;font-weight:600}
+html[data-atlas-experiment] .ach-case-picker select{width:100%;max-width:100%;min-width:0;min-height:46px;box-sizing:border-box;padding:10px 38px 10px 13px;border:1px solid var(--atc-control);border-radius:8px;background:var(--atc-surface);color:var(--atc-ink);font-family:inherit;font-size:16px;font-weight:400;line-height:1.5;cursor:pointer;text-overflow:ellipsis}
+html[data-atlas-experiment] .ach-case-picker option{background:var(--atc-surface);color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-case-context{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 18px;align-items:end;min-width:0;padding:18px 22px;border:1px solid var(--atc-line);border-radius:12px;background:var(--atc-surface);color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-case-summary{grid-column:1/-1;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:10px;min-width:0}
+html[data-atlas-experiment] .ach-case-summary>div{min-width:0;max-width:100%}
+html[data-atlas-experiment] .ach-case-summary>div>p{margin:4px 0 0;font-size:13px;line-height:1.5;color:var(--atc-muted)}
+html[data-atlas-experiment] .ach-case-summary h2{margin:0;color:var(--atc-ink);font-size:20px;line-height:1.4;font-weight:700;letter-spacing:-.02em;overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-case-id{display:inline-block;margin-top:5px;color:var(--atc-muted);font-size:13px;line-height:1.5;font-weight:500;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-case-type{color:var(--atc-muted);font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-case-context .atl-badge{align-self:flex-start;white-space:normal;overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-contact{display:flex;flex-wrap:wrap;gap:10px 24px;margin:0;padding:0;min-width:0}
+html[data-atlas-experiment] .ach-contact>div{min-width:0;flex:1 1 140px}
+html[data-atlas-experiment] .ach-contact>div:first-child{flex:0 1 130px}
+html[data-atlas-experiment] .ach-contact>div:last-child{flex:1 1 230px}
+html[data-atlas-experiment] .ach-contact dt{margin:0 0 4px;color:var(--atc-muted);font-size:12px;line-height:1.5;font-weight:500}
+html[data-atlas-experiment] .ach-contact dd{margin:0;color:var(--atc-ink);font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-case-context>.atl-btn{align-self:end;white-space:normal;max-width:100%;min-height:44px}
+html[data-atlas-experiment] .ach-chat-wrap{min-width:0}
+html[data-atlas-experiment] .ach-chat-wrap .atc-chat{width:100%;max-width:100%;box-sizing:border-box}
+html[data-atlas-experiment] .ach-case-summary p{margin:0}
+html[data-atlas-experiment] .ach-record-note{margin:0;color:var(--atc-muted);font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-case-link{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 20px;background:var(--atc-surface);border:1px solid var(--atc-line);border-radius:12px;color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-case-link strong{font-size:14px;font-weight:650}
+html[data-atlas-experiment] .ach-case-link p{margin:4px 0 0;color:var(--atc-muted);font-size:12px;line-height:1.5}
+html[data-atlas-experiment] .ach-empty{min-width:0;margin:0;padding:28px 20px;color:var(--atc-muted);font-size:14px;line-height:1.65;text-align:center;overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-empty h2,
+html[data-atlas-experiment] .ach-empty h3{margin:0 0 8px;font-size:18px;line-height:1.5;font-weight:650;color:var(--atc-ink)}
+html[data-atlas-experiment] .ach-empty p{max-width:55ch;margin:0 auto;font-size:14px;line-height:1.65;color:var(--atc-muted)}
+html[data-atlas-experiment] .ach-record-note{margin:0;font-size:12px;line-height:1.65;color:var(--atc-muted);overflow-wrap:anywhere}
+html[data-atlas-experiment] .ach-page :is(button,input,select,a):focus-visible{outline:3px solid var(--atc-focus);outline-offset:3px}
+html[data-atlas-experiment] .ach-item:focus-visible{outline-offset:-3px}
+html[data-atlas-experiment] .ach-item:active{background:var(--atc-highlight)}
+@media(max-width:1149px){
+  html[data-atlas-experiment] .ach-layout{grid-template-columns:minmax(0,1fr)}
+  html[data-atlas-experiment] .ach-sidebar{display:none}
+}
+@media(max-width:639px){
+  html[data-atlas-experiment] .ach-page-header{margin-bottom:20px}
+  html[data-atlas-experiment] .ach-page-header h1{font-size:22px}
+  html[data-atlas-experiment] .ach-page-header p{font-size:13px;line-height:1.6}
+  html[data-atlas-experiment] .ach-main{gap:12px}
+  html[data-atlas-experiment] .ach-case-context{grid-template-columns:minmax(0,1fr);gap:14px;padding:16px}
+  html[data-atlas-experiment] .ach-case-summary h2{font-size:18px}
+  html[data-atlas-experiment] .ach-contact{display:grid;gap:10px;padding-top:12px;border-top:1px solid var(--atc-line)}
+  html[data-atlas-experiment] .ach-contact>div{display:grid;grid-template-columns:115px minmax(0,1fr);align-items:baseline;gap:10px}
+  html[data-atlas-experiment] .ach-contact>div:last-child{display:block}
+  html[data-atlas-experiment] .ach-contact>div:last-child dt{margin-bottom:4px}
+  html[data-atlas-experiment] .ach-contact dt{margin:0}
+  html[data-atlas-experiment] .ach-contact dd{font-size:13px}
+  html[data-atlas-experiment] .ach-case-context>.atl-btn{width:100%;align-self:stretch}
+  html[data-atlas-experiment] .ach-empty{padding:24px 16px}
+}
+@media(prefers-reduced-motion:reduce){
+  html[data-atlas-experiment] .ach-page *{transition:none!important;scroll-behavior:auto!important}
+}
